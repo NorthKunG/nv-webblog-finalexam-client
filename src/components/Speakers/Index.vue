@@ -39,7 +39,7 @@
                 <button class="btn btn-primary" v-on:click="navigateTo('/speaker/' + speaker.id)">View</button>
                 <div class="float-end">
                     <button class="btn btn-success" v-on:click="navigateTo('/speaker/edit/' + speaker.id)">Edit</button>
-                    <button class="btn btn-danger" v-on:click="deleteComputer(speaker)">Delete</button>
+                    <button class="btn btn-danger" v-on:click="deleteSpeaker(speaker)">Delete</button>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@ export default {
     navigateTo(route) {
       this.$router.push(route);
     },
-    async deleteUser(speaker) {
+    async deleteSpeaker(speaker) {
       let result = confirm("Want to delete?");
       if (result) {
         try {
