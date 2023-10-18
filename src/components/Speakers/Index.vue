@@ -5,7 +5,7 @@
         <button class="btn btn-warning mb-3 fw-bold" v-on:click="navigateTo('/speaker/create/')">Create Speaker</button>
         <div class="row row-cols-2 d-flex justify-content-center fw-bold">
             <div v-for="speaker in speakers" v-bind:key="speaker.id" style="width: 40rem"
-                class="col border mb-3 mx-2 p-3 text-start bg-light">
+                class="col border mb-3 mx-2 p-3 text-start bg-light rounded-2">
                 <div class="row p-2 mb-3">
                     <div class="col-3">
                         <label for="brand" class="form-label">ID:</label>
