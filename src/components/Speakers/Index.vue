@@ -13,7 +13,7 @@
                     </div>
                     <div class="col">
                         <label for="product" class="form-label">Model:</label>
-                        <span class="input-group-text"> {{ speaker.modal }} </span>
+                        <span class="input-group-text"> {{ speaker.model }} </span>
                     </div>
                 </div>
                 <div class="row p-2 mb-3">
